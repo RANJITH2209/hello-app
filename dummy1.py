@@ -100,10 +100,88 @@ Decision_Tree = [Senti5DecisionTreeVidID,Senti5DecisionTreeTitle,
 		UTubeDecisionTreeVidID,UTubeDecisionTreeTitle]
 Meta_Data["Decision Tree"] = Decision_Tree
 
+#p-value
+Senti5pvalueVidID = ['KLnGOL_AUgA', '8Aw45HN5lnA', 'eyknGvncKLw']
+Senti5pvalueTitle = ['Calculate the P-Value in Statistics - Formula to Find the P-Value in Hypothesis Testing',
+ 'P-Value Method For Hypothesis Testing',
+ 'P-value in statistics: Understanding the p-value and what it tells us - Statistics Help']
 
-	  
-	  
-	 
+UTubepvalueVidID = ['CL9MsExcKfU', 'vemZtEM63GY', 'eyknGvncKLw']
+UTubepvalueTitle = ['p-Value (Statistics made simple)',
+ 'p-values: What they are and how to interpret them',
+ 'P-value in statistics: Understanding the p-value and what it tells us - Statistics Help']
+p_value = [Senti5pvalueVidID,Senti5pvalueTitle,
+	  UTubepvalueVidID,UTubepvalueTitle]
+Meta_Data["p-value"] = p_value
+
+#Confidence intervals
+Senti5CIVidID = ['tFWsuO9f74o', 'MUD390jtgQs', 'DT-fPG0Hff8']
+Senti5CITitle = ['Understanding Confidence Intervals: Statistics Help',
+ "Student's T Distribution - Confidence Intervals & Margin of Error",
+ 'How To Find The Z Score, Confidence Interval, and Margin of Error for a Population Mean']
+UTubeCIVidID = ['hlM7zdf7zwU', 'ENnlSlvQHO0', 'tFWsuO9f74o']
+UTubeCITitle = ['Confidence intervals and margin of error | AP Statistics | Khan Academy',
+ 'Confidence Interval [Simply explained]',
+ 'Understanding Confidence Intervals: Statistics Help']
+CI = [Senti5CIVidID,Senti5CITitle,
+     UTubeCIVidID,UTubeCITitle]
+Meta_Data["Confidence intervals"] = CI
+
+#Normal distribution
+Senti5NormalDistVidID = ['mtbJbDwqWLE', 'p_KApjpyBHE', 'CjF_yQ2N638']
+Senti5NormalDistTitle = ['The Normal Distribution and the 68-95-99.7 Rule (5.2)',
+ 'Normal Distribution: Calculating Probabilities/Areas (z-table)',
+ 'Standard Normal Distribution Tables, Z Scores, Probability & Empirical Rule  - Stats']
+UTubeNormalDistVidID = ['xI9ZHGOSaCg', 'rzFX5NWojp0', 'gHBL5Zau3NE']
+
+UTubeNormalDistTitle = ['Normal Distribution EXPLAINED with Examples',
+ 'The Normal Distribution, Clearly Explained!!!',
+ 'Normal Distribution & Probability Problems']
+
+Normal_dist = [Senti5NormalDistVidID,Senti5NormalDistTitle,
+	      UTubeNormalDistVidID,UTubeNormalDistTitle]
+Meta_Data["Normal distribution"] = Nomral_dist
+
+#Gradient descent
+Senti5GDVidID = ['sDv4f4s2SB8', 'IHZwWFHWa-w', 'fXQXE96r4AY']
+Senti5GDTitle = ['Gradient Descent, Step-by-Step',
+ 'Gradient descent, how neural networks learn | Chapter 2, Deep learning',
+ 'Intro to Gradient Descent || Optimizing High-Dimensional Equations']
+UTubeGDVidID = ['sDv4f4s2SB8', 'IHZwWFHWa-w', 'i62czvwDlsw']
+UTubeGDTitle = ['Gradient Descent, Step-by-Step',
+ 'Gradient descent, how neural networks learn | Chapter 2, Deep learning',
+ 'Gradient Descent Explained']
+
+GD = [Senti5GDVidID,Senti5GDTitle,
+     UTubeGDVidID,UTubeGDTitle]
+Meta_Data["Gradient descent"] = GD
+
+#Primary key in SQL
+Senti5PrimaryVidID = ['Tp37HXfekNo', 'B5r8CcTUs5Y', 'e1WSVL4EIz4']
+Senti5PrimaryTitle = ['Lec-9: What is Primary Key in DBMS | Primary Key with Examples in Hindi',
+ 'Primary & Foreign Keys',
+ 'Working with Primary & Foreign key Constraint in SQL Server | SQL Server Tutorial']
+UTubePrimaryVidID = ['unREmbNASaI', 'B5r8CcTUs5Y', '620DzFVz41o']
+UTubePrimaryTitle = ['Primary Key and Foreign Key Tutorial in MySQL | What is Primary Key and Foreign Key DBMS | Edureka',
+ 'Primary & Foreign Keys',
+ 'MySQL: PRIMARY KEYS are easy']
+
+Primary = [Senti5PrimaryVidID,Senti5PrimaryTitle,
+	  UTubePrimaryVidID,UTubePrimaryTitle]
+Meta_Data["Primary key in SQL"] = Primary
+
+#confusion matrix
+Senti5CMVidID = ['AyP85ocS-8Y', 'Kdsp6soqA7o', '8Oog7TXHvFY']
+Senti5CMTitle = ['Confusion Matrix ll Accuracy,Error Rate,Precision,Recall Explained with Solved Example in Hindi',
+ 'Machine Learning Fundamentals: The Confusion Matrix',
+ 'Making sense of the confusion matrix']
+UTubeCMVidID = ['Kdsp6soqA7o', 'prWyZhcktn4', 'LxcRFNRgLCs']
+UTubeCMTitle = ['Machine Learning Fundamentals: The Confusion Matrix',
+ 'Confusion Matrix In Machine Learning | Confusion Matrix Explained With Example | Simplilearn',
+ 'The Confusion Matrix : Data Science Basics']
+cm = [Senti5CMVidID,Senti5CMTitle,
+     UTubeCMVidID,UTubeCMTitle]
+Meta_Data["confusion matrix"] = cm
 
 if (topic in Topic_list) and (topic != ""):
 	st.write("Results fetched")
