@@ -43,8 +43,8 @@ Senti5KNNTitle = ['KNN Algorithm In Machine Learning | KNN Algorithm Using Pytho
  'KNN Algorithm Explained with Simple Example   Machine Leaning']
 
 
-KNN_data = [Senti5LinearRegressionVidID,Senti5LinearRegressionTitle,
-			  UTubeLinearRegressionVidID,UTubeLinearRegressionTitle]
+KNN_data = [Senti5KNNVidID,Senti5KNNTitle,
+			  UTubeKNNVidID,UTubeKNNTitle]
 Meta_Data["KNN"] = KNN_data
 
 st.write("Results fetched")
