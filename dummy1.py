@@ -34,6 +34,9 @@ Meta_Data = {}
 ## KNN
 
 UTubeKNNVidID = ['CJjSPCslxqQ', 'HVXime0nQeI', '4HKqjENq9OU']
+
+
+
 UTubeKNNTitle = ['K-Nearest Neighbor Classification ll KNN Classification Explained with Solved Example in Hindi',
  'StatQuest: K-nearest neighbors, Clearly Explained',
  'KNN Algorithm In Machine Learning | KNN Algorithm Using Python | K Nearest Neighbor | Simplilearn']
@@ -47,7 +50,37 @@ KNN_data = [Senti5KNNVidID,Senti5KNNTitle,
 			  UTubeKNNVidID,UTubeKNNTitle]
 Meta_Data["KNN"] = KNN_data
 
+
+## Linear Regression
+
+Senti5LinearRegressionVidID = ['ZkjP5RJLQF4', 'zPG4NjIkCjc', 'owI7zxCqNY0']
+Senti5LinearRegressionTitle = ['Statistics 101: Linear Regression, The Very Basics 📈',
+ 'An Introduction to Linear Regression Analysis',
+ 'Video 1: Introduction to Simple Linear Regression']
+
+UTubeLinearRegressionVidID = ['zPG4NjIkCjc', 'nk2CQITm_eo', 'owI7zxCqNY0']
+
+UTubeLinearRegressionTitle = ['An Introduction to Linear Regression Analysis',
+ 'Linear Regression, Clearly Explained!!!',
+ 'Video 1: Introduction to Simple Linear Regression']
+
+Linear_Regression_data = [Senti5LinearRegressionVidID,Senti5LinearRegressionTitle,
+			 UTubeLinearRegressionVidID,UTubeLinearRegressionTitle]
+
+Meta_Data["Linear Regression"] = Linear_Regression_data
+
+ 
+
+
+
+
+
+
+
 st.write("Results fetched")
+
+
+
 col1, empty,col2 = st.columns(3)
 col1.header("FrameWork 1")
 col2.header("FrameWork 2")
