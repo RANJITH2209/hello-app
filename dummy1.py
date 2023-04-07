@@ -31,21 +31,21 @@ height =200
 #Meta Data
 Meta_Data = {}
 
-## linear Regression
+## KNN
 
-UTubeLinearRegressionVidID = ['CJjSPCslxqQ', 'HVXime0nQeI', '4HKqjENq9OU']
-UTubeLinearRegressionTitle = ['K-Nearest Neighbor Classification ll KNN Classification Explained with Solved Example in Hindi',
+UTubeKNNVidID = ['CJjSPCslxqQ', 'HVXime0nQeI', '4HKqjENq9OU']
+UTubeKNNTitle = ['K-Nearest Neighbor Classification ll KNN Classification Explained with Solved Example in Hindi',
  'StatQuest: K-nearest neighbors, Clearly Explained',
  'KNN Algorithm In Machine Learning | KNN Algorithm Using Python | K Nearest Neighbor | Simplilearn']
-Senti5LinearRegressionVidID = ['4HKqjENq9OU', 'CJjSPCslxqQ', 'IPqZKn_cMts']
-Senti5LinearRegressionTitle = ['KNN Algorithm In Machine Learning | KNN Algorithm Using Python | K Nearest Neighbor | Simplilearn',
+Senti5KNNVidID = ['4HKqjENq9OU', 'CJjSPCslxqQ', 'IPqZKn_cMts']
+Senti5KNNTitle = ['KNN Algorithm In Machine Learning | KNN Algorithm Using Python | K Nearest Neighbor | Simplilearn',
  'K-Nearest Neighbor Classification ll KNN Classification Explained with Solved Example in Hindi',
  'KNN Algorithm Explained with Simple Example   Machine Leaning']
 
 
-Linear_Regression_data = [Senti5LinearRegressionVidID,Senti5LinearRegressionTitle,
+KNN_data = [Senti5LinearRegressionVidID,Senti5LinearRegressionTitle,
 			  UTubeLinearRegressionVidID,UTubeLinearRegressionTitle]
-Meta_Data["Linear Regression"] = Linear_Regression_data
+Meta_Data["KNN"] = KNN_data
 
 st.write("Results fetched")
 col1, empty,col2 = st.columns(3)
@@ -70,51 +70,3 @@ try:
 		col2.subheader(Meta_Data[topic][3][i])
 except:
 	st.write("Enter the search topic above")
-
-
-
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-# 	col1, empty,col2 = st.columns(3)
-# col1.header("FrameWork 1")
-# col2.header("FrameWork 2")
-
-# for i in range(3):
-#   col2, empty,col1 = st.columns(3)
-
-
-#   youtube_vd_id2 =sorted_results["Team5_Order"][i][sorted_results["Team5_Order"][i].find("=")+1:] 
-#   html_code2 = f'<iframe width="{width}" height={height}" src="https://www.youtube.com/embed/{youtube_vd_id2}" frameborder="1" allowfullscreen></iframe>'
-
-#   col2.markdown(html_code2, unsafe_allow_html=True)
-#   col2.subheader(sorted_results["title"][i])
-
-  
-#   youtube_vd_id1 =sorted_results["YT_Order"][i][sorted_results["YT_Order"][i].find("=")+1:] 
-#   html_code1 = f'<iframe width="{width}" height={height}" src="https://www.youtube.com/embed/{youtube_vd_id1}" frameborder="1" allowfullscreen></iframe>'
-#   col1.markdown(html_code1, unsafe_allow_html=True)
-#   col1.subheader(sorted_results["YT_Title"][i])
