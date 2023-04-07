@@ -102,4 +102,4 @@ try:
 		col2.markdown(html_code2, unsafe_allow_html=True)
 		col2.subheader(Meta_Data[topic][3][i])
 except:
-	st.write("Enter the search topic above")
+	st.write("")
