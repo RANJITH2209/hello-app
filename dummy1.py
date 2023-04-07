@@ -20,7 +20,7 @@ topic = st.text_input("")
 
 Topic_list = ["KNN","Linear Regression","Logistic Regression","Decision Tree","p-value",
 	      "Confidence intervals","Normal distribution","Gradient descent",
-	      "Primary key in SQL","confusion matrix"]
+	      "Standardization in ML","confusion matrix"]
 
 if (topic not in Topic_list) and (topic != ""):
 	st.write("Please check the topic asssigned to you ! Re-enter the topic as it is....")
@@ -156,19 +156,18 @@ GD = [Senti5GDVidID,Senti5GDTitle,
      UTubeGDVidID,UTubeGDTitle]
 Meta_Data["Gradient descent"] = GD
 
-#Primary key in SQL
-Senti5PrimaryVidID = ['Tp37HXfekNo', 'B5r8CcTUs5Y', 'e1WSVL4EIz4']
-Senti5PrimaryTitle = ['Lec-9: What is Primary Key in DBMS | Primary Key with Examples in Hindi',
- 'Primary & Foreign Keys',
- 'Working with Primary & Foreign key Constraint in SQL Server | SQL Server Tutorial']
-UTubePrimaryVidID = ['unREmbNASaI', 'B5r8CcTUs5Y', '620DzFVz41o']
-UTubePrimaryTitle = ['Primary Key and Foreign Key Tutorial in MySQL | What is Primary Key and Foreign Key DBMS | Edureka',
- 'Primary & Foreign Keys',
- 'MySQL: PRIMARY KEYS are easy']
-
-Primary = [Senti5PrimaryVidID,Senti5PrimaryTitle,
-	  UTubePrimaryVidID,UTubePrimaryTitle]
-Meta_Data["Primary key in SQL"] = Primary
+#Standardization in ML
+Senti5SDVidID = ['mnKm3YP56PY', 'bqhQ2LWBheQ', 'sxEqtjLC0aM']
+Senti5SDTitle = ['Standardization Vs Normalization- Feature Scaling',
+ 'Normalization Vs. Standardization (Feature Scaling in Machine Learning)',
+ 'Standardization vs Normalization Clearly Explained!']
+UTubeSDVidID = ['sxEqtjLC0aM', 'mnKm3YP56PY', '2mcEMRGW1eY']
+UTubeSDTitle = ['Standardization vs Normalization Clearly Explained!',
+ 'Standardization Vs Normalization- Feature Scaling',
+ 'Standardization Feature Scaling || Lesson 24 || Machine Learning || Learning Monkey |']
+SD = [Senti5SDVidID,Senti5SDTitle,
+	  UTubeSDVidID,UTubeSDTitle]
+Meta_Data["Standardization in ML"] = SD
 
 #confusion matrix
 Senti5CMVidID = ['AyP85ocS-8Y', 'Kdsp6soqA7o', '8Oog7TXHvFY']
