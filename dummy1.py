@@ -140,7 +140,7 @@ UTubeNormalDistTitle = ['Normal Distribution EXPLAINED with Examples',
 
 Normal_dist = [Senti5NormalDistVidID,Senti5NormalDistTitle,
 	      UTubeNormalDistVidID,UTubeNormalDistTitle]
-Meta_Data["Normal distribution"] = Nomral_dist
+Meta_Data["Normal distribution"] = Normal_dist
 
 #Gradient descent
 Senti5GDVidID = ['sDv4f4s2SB8', 'IHZwWFHWa-w', 'fXQXE96r4AY']
