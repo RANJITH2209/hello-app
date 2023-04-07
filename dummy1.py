@@ -77,7 +77,7 @@ Meta_Data["Linear Regression"] = Linear_Regression_data
 
 
 
-if (topic not in Topic_list) and (topic != ""):
+if (topic in Topic_list) and (topic != ""):
 	st.write("Results fetched")
 
 
