@@ -55,63 +55,64 @@ col2.header("FrameWork 2")
 
 
 for i in range(3):
-  col1, empty,col2 = st.columns(3)
-
-  youtube_vd_id1 = Meta_Data[topic][0][i] 
-  html_code1 = f'<iframe width="{width}" height={height}" src="https://www.youtube.com/embed/{youtube_vd_id1}" frameborder="1" allowfullscreen></iframe>'
-  col1.markdown(html_code1, unsafe_allow_html=True)
-  col1.subheader(Meta_Data[topic][1][i])
-
-
-  youtube_vd_id2 = Meta_Data[topic][2][i]
-  html_code2 = f'<iframe width="{width}" height={height}" src="https://www.youtube.com/embed/{youtube_vd_id2}" frameborder="1" allowfullscreen></iframe>'
-  col2.markdown(html_code2, unsafe_allow_html=True)
-  col2.subheader(Meta_Data[topic][3][i])
-
-  
-
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	col1, empty,col2 = st.columns(3)
-col1.header("FrameWork 1")
-col2.header("FrameWork 2")
 
-for i in range(3):
-  col2, empty,col1 = st.columns(3)
+	youtube_vd_id1 = Meta_Data[topic][0][i] 
+	html_code1 = f'<iframe width="{width}" height={height}" src="https://www.youtube.com/embed/{youtube_vd_id1}" frameborder="1" allowfullscreen></iframe>'
+	col1.markdown(html_code1, unsafe_allow_html=True)
+	col1.subheader(Meta_Data[topic][1][i])
 
 
-  youtube_vd_id2 =sorted_results["Team5_Order"][i][sorted_results["Team5_Order"][i].find("=")+1:] 
-  html_code2 = f'<iframe width="{width}" height={height}" src="https://www.youtube.com/embed/{youtube_vd_id2}" frameborder="1" allowfullscreen></iframe>'
+	youtube_vd_id2 = Meta_Data[topic][2][i]
+	html_code2 = f'<iframe width="{width}" height={height}" src="https://www.youtube.com/embed/{youtube_vd_id2}" frameborder="1" allowfullscreen></iframe>'
+	col2.markdown(html_code2, unsafe_allow_html=True)
+	col2.subheader(Meta_Data[topic][3][i])
 
-  col2.markdown(html_code2, unsafe_allow_html=True)
-  col2.subheader(sorted_results["title"][i])
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+# 	col1, empty,col2 = st.columns(3)
+# col1.header("FrameWork 1")
+# col2.header("FrameWork 2")
+
+# for i in range(3):
+#   col2, empty,col1 = st.columns(3)
+
+
+#   youtube_vd_id2 =sorted_results["Team5_Order"][i][sorted_results["Team5_Order"][i].find("=")+1:] 
+#   html_code2 = f'<iframe width="{width}" height={height}" src="https://www.youtube.com/embed/{youtube_vd_id2}" frameborder="1" allowfullscreen></iframe>'
+
+#   col2.markdown(html_code2, unsafe_allow_html=True)
+#   col2.subheader(sorted_results["title"][i])
 
   
-  youtube_vd_id1 =sorted_results["YT_Order"][i][sorted_results["YT_Order"][i].find("=")+1:] 
-  html_code1 = f'<iframe width="{width}" height={height}" src="https://www.youtube.com/embed/{youtube_vd_id1}" frameborder="1" allowfullscreen></iframe>'
-  col1.markdown(html_code1, unsafe_allow_html=True)
-  col1.subheader(sorted_results["YT_Title"][i])
+#   youtube_vd_id1 =sorted_results["YT_Order"][i][sorted_results["YT_Order"][i].find("=")+1:] 
+#   html_code1 = f'<iframe width="{width}" height={height}" src="https://www.youtube.com/embed/{youtube_vd_id1}" frameborder="1" allowfullscreen></iframe>'
+#   col1.markdown(html_code1, unsafe_allow_html=True)
+#   col1.subheader(sorted_results["YT_Title"][i])
