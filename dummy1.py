@@ -70,12 +70,40 @@ Linear_Regression_data = [Senti5LinearRegressionVidID,Senti5LinearRegressionTitl
 
 Meta_Data["Linear Regression"] = Linear_Regression_data
 
- 
+
+#Logistic Regression
+
+Senti5LogisticRegressionVidID = ['yIYKR4sgzI8', 'zAULhNrnuL4', 'XnOAdxOWXWg']
+Senti5LogisticRegressionTitle = ['StatQuest: Logistic Regression',
+ 'Statistics 101: Logistic Regression, An Introduction',
+ 'Logistic Regression | Logistic Regression in Python | Machine Learning Algorithms | Simplilearn']
+UTubeLogisticRegressionVidID = ['yIYKR4sgzI8', 'C5268D9t9Ak', '3tq4t41MsPc']
+UTubeLogisticRegressionTitle = ['StatQuest: Logistic Regression',
+ 'Logistic Regression [Simply explained]',
+ 'Logistic Regression: An Introduction']
+Logistic_Regression_data = [Senti5LogisticRegressionVidID,Senti5LogisticRegressionTitle,
+			   UTubeLogisticRegressionVidID,UTubeLogisticRegressionTitle]
+Meta_Data["Logistic Regression] = Logistic_Regression_data
+
+#Decision Tree
+
+Senti5DecisionTreeVidID = ['RmajweUFKvM', 'coOTEc-0OGw', 'ZVR2Way4nwQ']
+Senti5DecisionTreeTitle = ['Decision Tree In Machine Learning | Decision Tree Algorithm In Python |Machine Learning |Simplilearn',
+ '1. Decision Tree | ID3 Algorithm | Solved Numerical Example | by Mahesh Huddar',
+ 'Decision Tree Classification Clearly Explained!']
+UTubeDecisionTreeVidID = ['ZVR2Way4nwQ', '_L39rN6gz7Y', 'ydvnVw80I_8']
+UTubeDecisionTreeTitle = ['Decision Tree Classification Clearly Explained!',
+ 'Decision and Classification Trees, Clearly Explained!!!',
+ 'Decision Analysis 3: Decision Trees']
+	  
+Decision_Tree = [Senti5DecisionTreeVidID,Senti5DecisionTreeTitle,
+		UTubeDecisionTreeVidID,UTubeDecisionTreeTitle]
+Meta_Data["Decision Tree"] = Decision_Tree
 
 
-
-
-
+	  
+	  
+	 
 
 if (topic in Topic_list) and (topic != ""):
 	st.write("Results fetched")
