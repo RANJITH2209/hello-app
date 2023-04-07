@@ -83,7 +83,7 @@ UTubeLogisticRegressionTitle = ['StatQuest: Logistic Regression',
  'Logistic Regression: An Introduction']
 Logistic_Regression_data = [Senti5LogisticRegressionVidID,Senti5LogisticRegressionTitle,
 			   UTubeLogisticRegressionVidID,UTubeLogisticRegressionTitle]
-Meta_Data["Logistic Regression] = Logistic_Regression_data
+Meta_Data["Logistic Regression"] = Logistic_Regression_data
 
 #Decision Tree
 
