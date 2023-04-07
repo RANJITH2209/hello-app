@@ -21,7 +21,8 @@ topic = st.text_input("")
 Topic_list = ["KNN","Linear Regression","Logistic Regression","Decision Tree","p-value",
 	      "Confidence intervals","Normal distribution","Gradient descent",
 	      "Primary key in SQL","confusion matrix"]
-if topic not in Topic_list:
+
+if (topic not in Topic_list) and (topic != ""):
 	st.write("Please check the topic asssigned to you ! Re-enter the topic as it is....")
 if topic in Topic_list:
 	st.write("Fetching results, Please wait...")
@@ -76,8 +77,8 @@ Meta_Data["Linear Regression"] = Linear_Regression_data
 
 
 
-
-st.write("Results fetched")
+if topic != "":
+	st.write("Results fetched")
 
 
 
