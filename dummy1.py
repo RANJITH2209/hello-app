@@ -18,37 +18,100 @@ st.markdown("<h2 style='text-align: right; font-size: 20px;'> ~ From the student
 st.subheader("Search")
 topic = st.text_input("")
 
-if topic != "":
-  st.markdown("Fetching results, Please wait...")
+Topic_list = ["KNN","Linear Regression","Logistic Regression","Decision Tree","p-value",
+	      "Confidence intervals","Normal distribution","Gradient descent",
+	      "Primary key in SQL","confusion matrix"]
+if topic not in Topic_list:
+	st.write("Please search for topic given in the list")
+if topic in Topic_list:
+	st.write("Fetching results, Please wait...")
 
 width = 350
 height =200
-L = ["PHxYNGo8NcI","FUY07dvaUuE", "ZVR2Way4nwQ","PYxDkGlpj_U","JcI5E2Ng6r4","ydvnVw80I_8","RmajweUFKvM","_L39rN6gz7Y","coOTEc-0OGw"]
+#Meta Data
+Meta_Data = {}
 
-col1, col2 = st.columns([1, 1])
+## linear Regression
 
-# Add content to columns
+UTubeLinearRegressionVidID = ['CJjSPCslxqQ', 'HVXime0nQeI', '4HKqjENq9OU']
+UTubeLinearRegressionTitle = ['K-Nearest Neighbor Classification ll KNN Classification Explained with Solved Example in Hindi',
+ 'StatQuest: K-nearest neighbors, Clearly Explained',
+ 'KNN Algorithm In Machine Learning | KNN Algorithm Using Python | K Nearest Neighbor | Simplilearn']
+Senti5LinearRegressionVidID = ['4HKqjENq9OU', 'CJjSPCslxqQ', 'IPqZKn_cMts']
+Senti5LinearRegressionTitle = ['KNN Algorithm In Machine Learning | KNN Algorithm Using Python | K Nearest Neighbor | Simplilearn',
+ 'K-Nearest Neighbor Classification ll KNN Classification Explained with Solved Example in Hindi',
+ 'KNN Algorithm Explained with Simple Example   Machine Leaning']
 
-name =["Machine Learning Tutorial Python - 9  Decision Tree","Decision Analysis 4 (Tree): EVSI - Expected Value of Sample Information",
-"Decision Tree Classification Clearly Explained!",
-"Decision Trees for A Level Business",
-"Decision Tree: Important things to know",
-"Decision Analysis 3: Decision Trees",
-"Decision Tree In Machine Learning | Decision Tree Algorithm In Python |Machine Learning |Simplilearn",
-"Decision and Classification Trees, Clearly Explained!!!",
-"1. Decision Tree | ID3 Algorithm | Solved Numerical Example | by Mahesh Huddar"]
 
-col1.header("Youtube Results")
-for i in range(9):
-		html_code = f'<iframe width="{width}" height={height}" src="https://www.youtube.com/embed/{L[i]}" frameborder="0" allowfullscreen></iframe>'
-		# Display HTML code
-		col1.markdown(html_code, unsafe_allow_html=True)
-		col1.subheader(name[i])
+Linear_Regression_data = [Senti5LinearRegressionVidID,Senti5LinearRegressionTitle,
+			  UTubeLinearRegressionVidID,UTubeLinearRegressionTitle]
+Meta_Data["Linear Regression"] = Linear_Regression_data
 
-col2.header("Smart Results")
+st.write("Results fetched")
+col1, empty,col2 = st.columns(3)
+col1.header("FrameWork 1")
+col2.header("FrameWork 2")
 
-for i in range(9):
-		html_code = f'<iframe width="{width}" height={height}" src="https://www.youtube.com/embed/{L[i]}" frameborder="0" allowfullscreen></iframe>'
-		# Display HTML code
-		col2.markdown(html_code, unsafe_allow_html=True)
-		col2.subheader(name[i])
+
+
+for i in range(3):
+  col1, empty,col2 = st.columns(3)
+
+  youtube_vd_id1 = Meta_Data[topic][0][i] 
+  html_code1 = f'<iframe width="{width}" height={height}" src="https://www.youtube.com/embed/{youtube_vd_id1}" frameborder="1" allowfullscreen></iframe>'
+  col1.markdown(html_code1, unsafe_allow_html=True)
+  col1.subheader(Meta_Data[topic][1][i])
+
+
+  youtube_vd_id2 = Meta_Data[topic][2][i]
+  html_code2 = f'<iframe width="{width}" height={height}" src="https://www.youtube.com/embed/{youtube_vd_id2}" frameborder="1" allowfullscreen></iframe>'
+  col2.markdown(html_code2, unsafe_allow_html=True)
+  col2.subheader(Meta_Data[topic][3][i])
+
+  
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	col1, empty,col2 = st.columns(3)
+col1.header("FrameWork 1")
+col2.header("FrameWork 2")
+
+for i in range(3):
+  col2, empty,col1 = st.columns(3)
+
+
+  youtube_vd_id2 =sorted_results["Team5_Order"][i][sorted_results["Team5_Order"][i].find("=")+1:] 
+  html_code2 = f'<iframe width="{width}" height={height}" src="https://www.youtube.com/embed/{youtube_vd_id2}" frameborder="1" allowfullscreen></iframe>'
+
+  col2.markdown(html_code2, unsafe_allow_html=True)
+  col2.subheader(sorted_results["title"][i])
+
+  
+  youtube_vd_id1 =sorted_results["YT_Order"][i][sorted_results["YT_Order"][i].find("=")+1:] 
+  html_code1 = f'<iframe width="{width}" height={height}" src="https://www.youtube.com/embed/{youtube_vd_id1}" frameborder="1" allowfullscreen></iframe>'
+  col1.markdown(html_code1, unsafe_allow_html=True)
+  col1.subheader(sorted_results["YT_Title"][i])
