@@ -22,7 +22,7 @@ Topic_list = ["KNN","Linear Regression","Logistic Regression","Decision Tree","p
 	      "Confidence intervals","Normal distribution","Gradient descent",
 	      "Primary key in SQL","confusion matrix"]
 if topic not in Topic_list:
-	st.write("Please search for topic given in the list")
+	st.write("Please check the topic asssigned to you ! Re-enter the topic as it is....")
 if topic in Topic_list:
 	st.write("Fetching results, Please wait...")
 
