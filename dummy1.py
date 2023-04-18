@@ -9,6 +9,9 @@ import pandas as pd
 
 
 
+st.set_page_config(layout="wide")
+
+
 
 
 
@@ -72,7 +75,6 @@ height =200
 ###
 
 
-st.set_page_config(layout="wide")
 #st.title("Team 5")
 
 
