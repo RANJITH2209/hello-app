@@ -4,19 +4,80 @@ import streamlit as st
 import pandas as pd
 
 
-st.set_page_config(layout="wide")
-#st.title("Team 5")
+##
 
-st.markdown("<h1 style='font-family: cursive; text-align: center;'>Team Senti5</h1>", unsafe_allow_html=True)
+
+
+
+
+
+
+
+
+
+# Your Streamlit app code goes here
+
+def add_bg_from_url():
+    st.markdown(
+         f"""
+         <style>
+         .stApp {{
+             background-image: url("https://c0.wallpaperflare.com/preview/986/258/483/art-background-blue-color.jpg");
+             background-attachment: fixed;
+             background-size: cover
+         }}
+         </style>
+         """,
+         unsafe_allow_html=True
+     )
+
+add_bg_from_url() 
+
+
+
+st.markdown("<h1 style='font-family: cursive; text-align: center;'>Team SentiMinds</h1>", unsafe_allow_html=True)
 st.markdown(
-    "<h1 style='text-align: center;'><img src='https://icons.iconarchive.com/icons/dtafalonso/android-lollipop/512/Youtube-icon.png' height='50'/> Smart Youtube Results</h1>",
+    "<h1 style='text-align: center;'><img src='https://icons.iconarchive.com/icons/dtafalonso/android-lollipop/512/Youtube-icon.png' height='50'/> Sentiment Based Youtube Results</h1>",
     unsafe_allow_html=True
 )
+
 
 st.markdown("<h2 style='text-align: right; font-size: 20px;'> ~ From the students of Praxis Business School, Bangalore</h2>", unsafe_allow_html=True)
 
 st.subheader("Search")
+
+st.markdown("""
+    <style>
+    input[type="text"] {
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+# Create the search bar
 topic = st.text_input("")
+
+
+#topic = st.text_input("")
+if topic != "":
+  st.markdown("Fetching results, Please wait...")
+
+#num = int(st.text_input("No of Videos:"))
+# num=10
+width = 350
+height =200
+
+
+###
+
+
+st.set_page_config(layout="wide")
+#st.title("Team 5")
+
+
+
+# topic = st.text_input("")
 
 Topic_list = ["KNN","Linear Regression","Logistic Regression","Decision Tree","p-value",
 	      "Confidence intervals","Normal distribution","Gradient descent",
