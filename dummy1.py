@@ -63,8 +63,8 @@ topic = st.text_input("")
 
 
 #topic = st.text_input("")
-if topic != "":
-  st.markdown("Fetching results, Please wait...")
+# if topic != "":
+#   st.markdown("Fetching results, Please wait...")
 
 #num = int(st.text_input("No of Videos:"))
 # num=10
