@@ -251,8 +251,8 @@ if (topic in Topic_list) and (topic != ""):
 
 
 col1, empty,col2 = st.columns(3)
-col1.header("FrameWork 1")
-col2.header("FrameWork 2")
+col1.header("SentiMinds FrameWork")
+col2.header("Youtube Results")
 
 
 try:
